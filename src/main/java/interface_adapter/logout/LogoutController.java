@@ -24,7 +24,7 @@ public class LogoutController {
         // 1. instantiate the `LogoutInputData`, which should contain the username.
         // 2. tell the Interactor to execute.
         final LogoutInputData logoutInputData = new LogoutInputData(username);
-        this.logoutUseCaseInteractor.execute(data);
+        this.logoutUseCaseInteractor.execute(logoutInputData);
 
         logoutUseCaseInteractor.execute(logoutInputData);
     }
